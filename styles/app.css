@@ -225,9 +225,9 @@ Header
 
 #login {
   border: 1px solid var(--primery-color);
-  color: var(--primery-color);
-  background-color: transparent;
+  color: #ffffff;
   transition: all .3s ease;
+  background-color: #df21445c;
 }
 
 #signup {
