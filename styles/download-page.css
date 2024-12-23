@@ -1,0 +1,1145 @@
+:root {
+    --bg-body-color: #303030;
+    --primery-color: #DF2144;
+    --secondry-color: #4B4B4B;
+    --input-bg-color: #222222;
+    --bg-color: #202020;
+    --font-color: #fff;
+    --white: white;
+    --font-color2: #757575;
+    --yellow: #EEBB07;
+}
+
+
+
+/* 
+=================================
+Swiper Custom Slider
+=================================
+*/
+.swiper {
+    width: 600px;
+    height: 300px;
+}
+
+
+.main_movie_page {
+    position: relative;
+    background-image: url(../img/backgroundPageMovie.jfif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.main_movie_page_wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 3rem 0;
+}
+
+.bg_movie_download {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: #00000099;
+}
+
+.navigation2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 0;
+}
+
+.btns_movie_mobile {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.btns_movie_mobile button:first-child {
+    background-color: var(--primery-color);
+    color: var(--font-color);
+}
+
+.btns_movie_mobile button:last-child {
+    background-color: transparent;
+    border: 2px solid var(--primery-color);
+    color: var(--primery-color);
+}
+
+.btn_movie_ntn_mobile {
+    display: none;
+    width: 48%;
+    height: 4rem;
+    font-family: "vazir-regular";
+    border-radius: 4px;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    font-size: 1.6rem;
+    cursor: pointer;
+}
+
+
+.main_movie_page_right {
+    width: 32%;
+
+}
+
+.main_movie_page_right:hover .play_triler_movie {
+    visibility: visible;
+    opacity: 1;
+}
+
+.cover_downliad_movie {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+}
+
+.cover_downliad_movie img {
+    width: 100%;
+    height: 100%;
+    border-radius: 5rem;
+    border: 3px solid #DF2144;
+    overflow: hidden;
+    object-fit: cover;
+}
+
+.cover_downliad_movie div:first-child {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.308);
+    border-radius: 5rem;
+    z-index: 50;
+}
+
+.play_triler_movie {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    row-gap: 1rem;
+    height: auto;
+    position: absolute;
+    right: 0;
+    left: 0;
+    margin: auto;
+    bottom: 5rem;
+    z-index: 100;
+    font-size: 2rem;
+    font-weight: 600;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .2s ease-in-out;
+    cursor: pointer;
+}
+
+.play_triler_movie div {
+    width: 5rem;
+    height: 5rem;
+    background-color: var(--primery-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all .2s ease-in-out;
+    border-radius: 100%;
+}
+
+.play_triler_movie div svg {
+    width: 2rem;
+    height: 2rem;
+}
+
+.play_triler_movie:hover #s {
+    box-shadow: 0 0 2rem var(--primery-color);
+}
+
+.main_movie_page_left {
+    width: 65%;
+}
+
+
+.title_movie h1 {
+    font-size: 40px;
+    font-weight: 800;
+}
+
+.scores_movie_wrapper div {
+    width: 12rem;
+}
+
+.IMDB {}
+
+.IMDB img {
+    width: 3.6rem;
+    height: 3.6rem;
+}
+
+.IMDB_score {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-bottom: 3px solid #FFD600;
+    margin-bottom: 1rem;
+    padding-bottom: .5rem;
+    color: #FFD600;
+    font-size: 2.4rem;
+    font-weight: 700;
+}
+
+.IMDB_score span {
+    font-size: 1.6rem;
+    color: aliceblue;
+    font-weight: 500;
+}
+
+.IMDB_votes {
+    text-align: center;
+    color: #FFD600;
+}
+
+.IMDB_votes span,
+.tomato_votes span {
+    color: white;
+}
+
+.tomato,
+.web {
+    text-align: center;
+}
+
+.tomato_score,
+.web_score {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-bottom: 3px solid var(--primery-color);
+    margin-bottom: 1rem;
+    padding-bottom: 5px;
+}
+
+.tomato_score span,
+.web_score p {
+    color: var(--primery-color);
+    font-weight: 700;
+    font-size: 2.4rem;
+}
+
+.web_score span {
+    color: var(--font-color);
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+
+.tomato_votes p,
+.web_votes span {
+    color: var(--primery-color);
+}
+
+
+
+
+.download_movie_info {
+    flex-wrap: wrap;
+    row-gap: 1rem;
+}
+
+.download_movie_info div {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    width: 50%;
+}
+
+.box h2 {
+    font-weight: 600;
+    font-size: 2rem;
+}
+
+.box span {
+    font-weight: 500;
+    font-size: 1.6rem;
+}
+
+.download_movie_caption {
+    text-align: justify;
+}
+
+.download_movie_caption p span {
+    font-weight: 600;
+    font-size: 2.4rem;
+}
+
+.movie_poll_btn {}
+
+.Status_movie span {
+    color: #1EB7E8;
+}
+
+.Status_movie {
+    width: 26rem;
+    height: 4rem;
+    border-radius: 8px;
+    background-color: var(--primery-color);
+    color: var(--font-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.poll_btn {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 26rem;
+    height: 4rem;
+    border: 2px solid var(--primery-color);
+    border-radius: 8px;
+    background-color: transparent;
+    color: var(--font-color);
+    font-size: 1.4rem;
+    font-family: "vazir-regular";
+}
+
+
+.poll_btn span {
+    color: #1EB7E8;
+}
+
+.poll_btn div {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+.download_movie {
+    font-size: 16px;
+    background-color: var(--primery-color);
+    color: var(--white);
+}
+
+.online_movie {
+    font-size: 16px;
+    background-color: transparent;
+    border: 1px solid var(--primery-color);
+    color: var(--primery-color);
+}
+
+.donwload_movie {
+    display: flex;
+    align-items: center;
+}
+
+.donwload_movie div:first-child {
+    gap: 1rem;
+}
+
+.donwload_movie div {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.checkbox_elem {}
+
+
+.download_movie_btn {
+    width: 20rem;
+    height: 4rem;
+    font-family: "vazir-regular";
+    border-radius: 4px;
+}
+
+
+
+.title_movie,
+.scores_movie_wrapper,
+.download_movie_info,
+.download_movie_caption,
+.movie_poll_btn,
+.donwload_movie {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 2.8rem;
+}
+
+
+.actors {
+    margin-top: 10rem;
+}
+
+.actor_wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.actor_items {
+    background-color: #161616;
+    border-radius: 8px;
+    padding: 1rem;
+    text-align: center;
+    width: 20rem;
+}
+
+.sectioon_header h2 {
+    padding-bottom: 3rem;
+
+    font-size: 3.6rem;
+    font-weight: 700;
+
+}
+
+.actor_items h3 {
+    margin-top: 1rem;
+    font-size: 1.6rem;
+}
+
+.actor_items span {
+    font-size: 13px;
+    color: rgba(255, 255, 255, 0.651);
+}
+
+.actor_profile {
+    height: 18.5rem;
+}
+
+.actor_profile img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.show_all {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 13rem;
+    height: 4rem;
+    border-radius: 4px;
+    border: 2px solid #1EB7E8;
+    background-color: transparent;
+    cursor: pointer;
+    margin: 4rem auto;
+}
+
+.show_all button {
+    background-color: transparent;
+
+}
+
+.show_all button a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #1EB7E8;
+    font-family: "vazir-regular";
+    gap: 1rem;
+    transition: all 300ms ease;
+}
+
+/* 
+========================================================
+Section: Download Box
+========================================================
+*/
+
+
+.dowmload {}
+
+.download-box_wrapper {
+    height: 0;
+    overflow: hidden;
+    padding: 0;
+    transition: all 350ms linear;
+}
+
+.download-box_wrapper--toggle {
+    height: auto;
+    overflow: visible;
+    padding-bottom: 12px;
+}
+
+.downlaod_wrapper {
+    background-color: #111111;
+    border-radius: 12px;
+    margin-bottom: 2rem;
+}
+
+.download-box_season {
+    background-color: #161616;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 12px;
+    padding: 14px 12px;
+}
+
+
+
+.download-box_episod {
+    border-radius: 12px;
+    padding: 14px 12px;
+    margin: .8rem 1rem 0 1rem;
+    height: 8rem;
+    overflow: hidden;
+    background-color: #242424;
+}
+
+.download-box_episod--toggle {
+    height: auto;
+}
+
+.download-box_episod_top h3,
+.download-box_season h3 {
+    font-size: 2.3rem;
+    font-weight: 700;
+}
+
+.download-box_episod {}
+
+.download-box_episod_top {
+    padding: 0 1rem;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 6rem;
+    background-color: #242424;
+}
+
+.download-box_episod_bottom {}
+
+.open-close-toggle {
+    display: flex;
+    align-items: center;
+}
+
+.download-box_episod h3 span,
+.download-box_season h3 span {
+    color: var(--primery-color);
+}
+
+
+.download_box_quality {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 1rem 3rem 0 3rem;
+    row-gap: 1rem;
+    justify-content: space-between;
+
+    transition: all 350ms ease-in;
+}
+
+.download_box_quality-item {
+    border-radius: 15px;
+    background-color: #363636;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 35rem;
+    height: 4.5rem;
+    padding: 1rem;
+    transition: all 150ms ease-out;
+    cursor: pointer;
+}
+
+.download_box_quality-item:hover {
+    box-shadow: 0 0 20px rgba(58, 58, 58, 0.664);
+}
+
+.movie_size {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.movie_size span,
+.movie-quality span {
+    color: var(--primery-color);
+}
+
+.movie-quality h3 {
+    display: flex;
+    gap: 1rem;
+}
+
+/* 
+========================================================
+Section: Comment
+========================================================
+*/
+.comment {
+    margin-bottom: 10rem;
+}
+
+.section_comment_header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+}
+
+.section_comment_header_buttons {
+    display: flex;
+    gap: 1rem;
+}
+
+.section_comment_header_buttons button {
+    width: 6.5rem;
+    height: 3.6rem;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    font-family: "vazir-regular";
+    justify-content: center;
+    transition: all 200ms ease-in;
+    cursor: pointer;
+}
+
+.section_comment_header_buttons button:hover {
+    box-shadow: 0 0 15px var(--primery-color);
+}
+
+.section_comment_header_buttons button:first-child {
+    background-color: transparent;
+    border: 2px solid var(--primery-color);
+    color: var(--primery-color);
+}
+
+.section_comment_header_buttons button:last-child {
+    background-color: var(--primery-color);
+    color: var(--white);
+}
+
+.section_comment_header,
+.write_comment,
+.comment_sort {
+    margin-bottom: 3rem;
+}
+
+.write_comment {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--input-bg-color);
+    height: 5rem;
+    padding: 0 1rem;
+}
+
+#input_comment {
+    width: 60%;
+    color: var(--font-color);
+    font-family: "vazir-regular";
+    font-size: 1.8rem;
+}
+
+#input_comment::placeholder {
+    font-size: 1.8rem;
+    font-weight: 600;
+    font-family: "vazir-regular";
+    color: var(--font-color);
+}
+
+.send_comment {
+    width: 6.5rem;
+    background-color: #1EB7E8;
+    color: var(--font-color);
+    border-radius: 4px;
+    font-family: "vazir-regular";
+    height: 3.6rem;
+}
+
+.comment_sort {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+
+.comment_sort h4 {
+    font-size: 2rem;
+}
+
+.comment_sort_btn button {
+    font-family: "vazir-regular";
+    background-color: transparent;
+    border: 2px solid var(--primery-color);
+    color: var(--primery-color);
+    padding: 6px 1.6rem;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 2rem;
+    transition: all .2s ease-in-out;
+}
+
+.comment_sort_btn button:hover {
+    background-color: var(--primery-color);
+    color: var(--font-color);
+}
+
+.users_comment {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #212121;
+    padding: 1.6rem 2rem;
+    border-radius: 1rem;
+    margin-bottom: 2rem;
+}
+
+.users_comment_right {
+    width: 65%;
+}
+
+.users_comment_right p {
+    text-align: justify;
+}
+
+.users_comment_right div {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.user_name {
+    color: var(--primery-color);
+    font-size: 2.2rem;
+    font-weight: 600;
+}
+
+.users_comment_left {
+    display: flex;
+    align-items: end;
+    gap: 2rem;
+}
+
+.reply_comment button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 4rem;
+    height: 4rem;
+    background-color: #1EB7E8;
+    border-radius: 10px;
+    transform: rotate(45deg);
+    cursor: pointer;
+    margin-bottom: .6rem;
+}
+
+.reply_comment button svg {
+    transform: rotate(-45deg);
+}
+
+.comment_since {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.like_dislike_wrapper {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+#dislike,
+#like {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 2px solid var(--primery-color);
+    border-radius: 6px;
+    padding: 3px 6px;
+    transition: all .3s ease-in-out;
+    cursor: pointer;
+}
+
+#dislike:hover,
+#like:hover {
+    background-color: #df21448a;
+}
+
+.show_more_comment {
+    text-align: center;
+}
+
+.show_more_comment button {
+    width: 22rem;
+    height: 4rem;
+    background-color: var(--primery-color);
+    color: var(--font-color);
+    font-family: "vazir-regular";
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all .3s cubic-bezier(0, 0, 0.2, 1);
+}
+
+.show_more_comment button:hover {
+    box-shadow: 0 0 15px var(--primery-color);
+}
+
+.bg_movie_mobile {
+    display: none;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    object-fit: cover;
+    position: relative;
+    height: 35rem;
+}
+
+.bg_movie_mobile img {
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+.info_movie_mobile {
+    position: absolute;
+    bottom: 2rem;
+    left: 3rem;
+    right: 3rem;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.info_movie_mobile h2 {
+    font-size: 24px;
+    font-weight: 800;
+}
+
+.bg_movie_mobile_marke {
+    position: absolute;
+    right: 3rem;
+    top: 2rem;
+    cursor: pointer;
+}
+
+.flash_back {
+    position: absolute;
+    left: 3rem;
+    top: 2rem;
+    cursor: pointer;
+}
+
+.movie_episod {
+    text-align: center;
+}
+
+.movie_episod h3 span {
+    color: #1EB7E8;
+    font-size: 12px;
+}
+
+@media screen and (max-width: 1400px) {
+    .download_box_quality-item {
+        width: 32rem;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+
+
+
+    .actor_items {
+        width: 18rem;
+    }
+
+    .actor_swiper_slide {
+        margin-left: 2rem !important;
+    }
+
+    .download_box_quality-item {
+        width: 26rem;
+        font-size: 1.5rem;
+    }
+
+    .movie-quality h3 {
+        gap: .3rem;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .sectioon_header h2 {
+        font-size: 2.5rem;
+    }
+
+    .navigation2 {
+        padding: 0;
+    }
+
+    .users_comment_right p {
+        font-size: 14px;
+    }
+
+    .actor_items {
+        width: 15rem;
+        margin-left: 4rem;
+    }
+
+    .actor_swiper_slide {
+        margin-left: 4rem !important;
+    }
+
+    .download-box_episod_top h3,
+    .download-box_season h3 {
+        font-size: 2rem;
+    }
+
+
+}
+
+@media screen and (max-width: 768px) {
+    .navigation2 {
+        padding: 0;
+    }
+
+    .title_movie {
+        display: none;
+    }
+
+    .bg_movie_mobile {
+        background-image: url(/img/backgroundPageMovieMobile.png);
+        display: block;
+
+    }
+
+    .menu_mobile_hide {
+        display: none !important;
+    }
+
+    .btns_movie_mobile,
+    .actors,
+    .download_movie_info,
+    .scores_movie_wrapper,
+    .download_movie_caption {
+        font-size: 12px;
+        border-bottom: 3px solid transparent;
+        border-image: linear-gradient(to right, rgba(224, 11, 69, 0) 15%, var(--primery-color)50%, rgba(224, 11, 69, 0) 85%)1;
+    }
+
+    .btns_movie_mobile,
+    .title_movie,
+    .scores_movie_wrapper,
+    .download_movie_info,
+    .download_movie_caption,
+    .movie_poll_btn,
+    .donwload_movie {
+        padding: 3rem 0;
+        margin: 0;
+    }
+
+    .download-box_episod {
+        padding: 10px 12px;
+        margin: 0 1rem 8px 1rem;
+        overflow: hidden;
+    }
+
+    .download_box_quality-item {
+        width: 48%;
+        font-size: 1.2rem;
+    }
+
+    .download_box_quality {
+        margin: 1rem 1rem 0 1rem;
+    }
+
+    .comment_sort {
+        justify-content: space-between;
+    }
+
+    .comment_sort_btn {
+        display: flex;
+        gap: 2rem;
+        justify-content: space-between;
+    }
+
+    .comment_sort_btn button {
+        margin-left: 0;
+    }
+
+    .actors {
+        padding-bottom: 10rem;
+    }
+
+    .show_all {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .bg_movie_mobile {
+        max-height: 22rem;
+    }
+
+    .btn_movie_ntn_mobile {
+        display: flex;
+    }
+
+    .title_movie {
+        display: none;
+    }
+
+    #btn_wrapper {
+        display: none;
+    }
+
+    .scores_movie_wrapper div {
+        width: 15rem;
+    }
+
+
+
+    .IMDB img,
+    .tomato_score img,
+    .web img {
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+
+    .IMDB_votes,
+    .tomato_votes,
+    .web_votes {
+        font-size: 10px;
+    }
+
+    .IMDB_score,
+    .tomato_score span,
+    .web_score p {
+        font-size: 15px;
+    }
+
+    .web_score span,
+    .IMDB_score span {
+        font-size: 12px;
+    }
+
+    .IMDB_score,
+    .tomato_score,
+    .web_score {
+        justify-content: space-evenly;
+    }
+
+    .scores_movie_wrapper div {
+        max-width: 10rem;
+    }
+
+
+    .box h2 {
+        font-size: 1.5rem;
+    }
+
+    .box h2 span {
+        font-size: 10px;
+    }
+
+    .box svg {
+        width: 1.6rem;
+        height: 1.6rem;
+    }
+
+    .download_movie_caption p span {
+        font-size: 1.6rem;
+        font-weight: 700;
+    }
+
+    .movie_poll_btn {
+        display: none;
+    }
+
+    .download-box_episod_top h3,
+    .download-box_season h3 {
+        font-size: 15px;
+    }
+
+    .download-box_episod {
+        padding: 1rem 6px;
+    }
+
+    .download_box_quality {
+        margin: 1rem 0 0 0;
+    }
+
+    .download_box_quality-item {
+        width: 49%;
+        font-size: 1rem;
+    }
+
+    .download_box_quality-item {
+        padding: .5rem;
+        height: 3.5rem;
+    }
+
+    .users_comment_right {
+        width: 75%;
+    }
+
+    .users_comment_left {
+        align-items: center;
+        flex-direction: column-reverse;
+    }
+
+    .like_dislike_wrapper {
+        gap: .3rem;
+    }
+
+    .actor_items h3 {
+        font-size: 10px;
+    }
+
+    .actor_items span {
+        font-size: 8px;
+    }
+
+    .actor_items {
+        width: 10rem;
+        margin-left: 4rem;
+    }
+
+    .actor_profile {
+        height: 12rem;
+    }
+
+    .actor_swiper_slide {
+        margin-left: 4rem !important;
+    }
+}
+
+@media screen and (max-width: 450px) {
+
+    .section_comment_header {
+        gap: 1rem;
+        font-size: 12px;
+    }
+
+    .comment_sort h4 {
+        font-size: 14px;
+    }
+
+    .comment_sort {
+        gap: 0;
+    }
+
+    .comment_sort_btn {
+        gap: 1rem;
+    }
+
+    .users_comment_right p {
+        font-size: 13px;
+    }
+
+    .comment_sort_btn button {
+        width: 8rem;
+        font-size: 11px;
+        padding: 0 .3rem;
+        height: 3.6rem;
+    }
+}

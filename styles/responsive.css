@@ -1,0 +1,722 @@
+@media (min-width: 1400px) {
+
+    .container {
+        width: 1300px;
+    }
+
+
+}
+
+
+
+
+
+/* =========================================================================================== */
+
+@media screen and (max-width: 1400px) {
+    .header_search_box {
+        width: 25rem;
+    }
+
+    .btn {
+        width: 12rem;
+    }
+
+    .advance-search_box-bottom-filters {
+        justify-content: space-between;
+    }
+
+    .filters_checkbox {
+        width: 15rem !important;
+    }
+
+    .www {
+        gap: 2rem;
+    }
+}
+
+/* =========================================================================================== */
+
+@media screen and (max-width: 1200px) {
+    .desktop_ul {
+        gap: 1rem;
+    }
+
+    .header_search_box {
+        width: 20rem;
+    }
+
+    .btn {
+        width: 10rem;
+    }
+
+    .advance-search_box-bottom-filters {
+        column-gap: 0;
+    }
+
+    .fliters>div {
+        width: 18rem;
+    }
+
+    .subscribe_newsletter_left {
+        width: 50%;
+    }
+
+    .website_logo {
+        width: 60rem;
+    }
+
+    .donwload_movie {
+        flex-wrap: wrap;
+    }
+
+    .donwload_movie div {
+        flex-grow: 1;
+    }
+
+    .poll_btn {
+        font-size: 1.2rem;
+    }
+
+    .Status_movie {
+        font-size: 12px;
+    }
+}
+
+
+/* =========================================================================================== */
+
+@media screen and (max-width: 992px) {
+    .header_search_box {
+        display: none;
+    }
+
+    .desktop_ul {
+        display: none;
+    }
+
+    .menu_mobile_header {
+        display: flex;
+    }
+
+    .header_buttons_bobile {
+        display: flex;
+        gap: 2rem;
+    }
+
+    .hero_section_right {
+        width: 70%;
+    }
+
+    .header_buttons,
+    .logo-site {
+        display: none;
+    }
+
+    .FA_name_movie {
+        text-align: center;
+
+    }
+
+    .hero_section_show_movie {
+        margin-bottom: 0;
+    }
+
+    .hero_section {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .hero-pagination {
+        display: none !important;
+    }
+
+    .hero-prev-sliade,
+    .hero-next-sliade {
+        display: none !important;
+    }
+
+    .age_group_tab,
+    .order_group_tab {
+        display: block;
+    }
+
+    .search-movies_box {
+        width: 44rem;
+    }
+
+    .search-movies_page h2 {
+        font-size: 1.8rem;
+        font-weight: 600;
+    }
+
+    .advance-search_box span {
+        font-size: 1.8rem;
+        font-weight: 600;
+    }
+
+    .director,
+    .order {
+        display: none !important;
+    }
+
+    .subscribe_newsletter_wrapper {
+        flex-direction: column;
+        row-gap: 4rem;
+    }
+
+    .subscribe_newsletter_right,
+    .subscribe_newsletter_left {
+        width: 100%;
+    }
+
+    .login_inputs_name,
+    .login_inputs_number {
+        width: 48%;
+    }
+
+    .footer_right {
+        width: 60rem;
+    }
+
+    .website_logo {
+        width: 47rem;
+    }
+
+    .footer_description {
+        font-size: 14px;
+        line-height: 24px;
+    }
+
+    .menu_mobile {
+        display: flex;
+    }
+
+    .movies_slider-wraaper {
+        height: 32rem;
+    }
+
+    .movies_slider-left {
+        width: 45%;
+    }
+
+    .movies_slider-left_title {
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 10.5px;
+    }
+
+    .movies_slider_synopsis {
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 20.25px;
+    }
+
+    .movies_slider_description {
+        font-size: 10px;
+        font-weight: 400;
+        line-height: 16.75px;
+    }
+
+    .movies_slider_genre1 {
+        font-size: 15px;
+        font-weight: 600;
+        line-height: 25.25px;
+    }
+
+    .swiper-pagination_slider,
+    .swiper-button-prev-one-movies-slider,
+    .swiper-button-next-one-movies-slider {
+        display: none !important;
+    }
+
+    .swiper-slide {
+        margin-left: 1rem !important;
+    }
+
+    .recommended_serial_img,
+    .recommended_movie_img,
+    .recommended_animation_img,
+    .recommended_action_img,
+    .recommended_drama_img,
+    .recommended_scary_img {
+        height: auto !important;
+    }
+
+    .swiper-scary-sliders,
+    .swiper-drma-sliders,
+    .recommended-action-slider,
+    .recommended_animation_slider,
+    .recommended-serial_slider,
+    .recommended-movies_slider,
+    .recommended-item,
+    .recommended-serial-item,
+    .recommended-animation-item,
+    .recommended-action-item,
+    .recommended-drama-item,
+    .recommended-scary-item {
+        width: 15rem !important;
+    }
+
+    .main_movie_page_right {
+        display: none;
+    }
+
+    .main_movie_page_left {
+        width: 100%;
+    }
+
+    .Status_movie,
+    .poll_btn {
+        width: 22rem;
+    }
+
+    .download_movie_btn {
+        width: 17rem;
+    }
+}
+
+
+/* =========================================================================================== */
+
+@media screen and (max-width: 768px) {
+    .hero_section_title {
+        font-size: 3rem;
+        line-height: 40.5px;
+    }
+
+    .movie_synopsis {
+        margin-top: 1rem;
+    }
+
+    .movie_description {
+        font-size: 1.5rem;
+    }
+
+    .hero_section_genre {
+        margin: 1rem 0;
+    }
+
+    .advance-search_box-bottom-filters>div {
+        width: 20rem;
+    }
+
+    .movies_slider-wraaper {
+        height: 24rem;
+    }
+
+    .movies_slider__show_movie {
+        display: none;
+    }
+
+    .movies_slider-left_title {
+        font-size: 17px;
+        font-weight: 600;
+        margin-bottom: 1rem;
+    }
+
+    .movies_slider_synopsis {
+        font-size: 13px;
+        font-weight: 500;
+        line-height: 15.25px;
+    }
+
+    .movies_slider_genre {
+        margin-top: 0;
+    }
+
+    .movies_slider_score {
+        margin-top: .5rem;
+    }
+
+    .FA_name_movie {
+        display: none;
+    }
+
+    .footer_right {
+        width: 100%;
+    }
+
+    .website_logo {
+        position: static;
+        border-bottom-right-radius: 7rem;
+        margin: auto;
+        width: 100%;
+    }
+
+    .footer_wrapper {
+        flex-direction: column;
+    }
+
+    .footer_description {
+        margin-top: 5rem;
+    }
+
+    .footer_left {
+        margin-bottom: 10rem;
+        width: 100%;
+    }
+
+
+    .main_movie_page{
+        background-image: none;
+    }
+}
+
+
+/* =========================================================================================== */
+
+@media screen and (max-width: 750px) {}
+
+/* =========================================================================================== */
+@media screen and (max-width: 576px) {
+
+    .hero_section_title {
+        font-size: 2rem;
+        line-height: 10.5px;
+    }
+
+    .hero_section {
+        padding-top: 5.5rem;
+    }
+
+    .movie_synopsis {
+        margin: 2rem 0 0.4rem 0;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 2.1rem;
+    }
+
+    .movie_description {
+        font-size: 14px;
+    }
+
+    .hero_section_genre {
+        margin-top: 0;
+    }
+
+    /* Section 1 */
+    .recommended-item,
+    .recommended-movies_slider {
+        width: 13rem !important;
+    }
+
+    .recommended-movie {
+        margin-top: 4rem;
+    }
+
+    .recommended-item_cover img {
+        height: auto;
+    }
+
+    .search-movies {
+        display: none;
+    }
+
+    .recommended-item_name {
+        font-size: 1.4rem;
+    }
+
+    /* Section 2 */
+    .recommended-serial-item,
+    .recommended-serial_slider {
+        width: 13rem !important;
+    }
+
+    .recommended-item_cover img {
+        height: auto;
+    }
+
+    .search-movies {
+        display: none;
+    }
+
+    .recommended-item_name {
+        font-size: 1.4rem;
+    }
+
+
+    /* Section 3 */
+    .recommended-animation-item,
+    .recommended_animation_slider {
+        width: 13rem !important;
+    }
+
+    .recommended-animation-item_cover img {
+        height: auto;
+    }
+
+    .search-movies {
+        display: none;
+    }
+
+    .recommended-animation-item_name {
+        font-size: 1.4rem;
+    }
+
+    /* Section 4 */
+    .recommended-action-item,
+    .recommended-action-slider {
+        width: 13rem !important;
+    }
+
+    .recommended-action-item_cover img {
+        height: auto;
+    }
+
+    .search-movies {
+        display: none;
+    }
+
+    .recommended-animation-item_name {
+        font-size: 1.4rem;
+    }
+
+    /* Section 5 */
+    .recommended-drama-item,
+    .swiper-drma-sliders {
+        width: 13rem !important;
+    }
+
+    .recommended-drama-item_cover img {
+        height: auto;
+    }
+
+    .search-movies {
+        display: none;
+    }
+
+    .recommended-drama-item_name {
+        font-size: 1.4rem;
+    }
+
+    /* Section 6 */
+    .recommended-scary-item,
+    .swiper-scary-sliders {
+        width: 13rem !important;
+    }
+
+    .recommended-scary-item_cover img {
+        height: auto;
+    }
+
+    .search-movies {
+        display: none;
+    }
+
+    .recommended-drama-item_name {
+        font-size: 1.4rem;
+    }
+
+
+
+
+    .section-movie_header_title,
+    .section-movie_header_title,
+    .section-movie_header_title,
+    .section-movie_header_title {
+        font-size: 2rem;
+    }
+
+    .show_all_movie_mobile {
+        display: flex;
+    }
+
+    .show_all_movie {
+        display: none;
+    }
+
+    .movies_slider_score {
+        margin-top: 3px
+    }
+}
+
+
+/* =========================================================================================== */
+
+@media screen and (max-width:450px) {
+
+    .hero_section_title {
+        font-size: 1.8rem;
+        line-height: 2.5rem;
+    }
+
+    .movie_synopsis {
+        font-size: 16px;
+        line-height: 1.1rem;
+    }
+
+    .header_buttons_bobile {
+        gap: 1rem;
+    }
+
+    .btn2 {
+        width: 10rem;
+    }
+
+    .movie_description {
+        font-size: 12px;
+    }
+
+    .genre {
+        font-size: 16px;
+        font-weight: 600;
+        margin-top: 6px;
+    }
+
+    .genre_title {
+        font-size: 13px;
+    }
+
+    .hero_section_movie_score {
+        gap: 2rem;
+    }
+
+    .hero_section_movie_time span,
+    .hero_section_movie_metha p {
+        font-size: 13px;
+    }
+
+    .hero_section_movie_metha p span {
+        font-size: 15px;
+    }
+
+    .hero_section_show_movie {
+        width: 55%;
+        height: 3.5rem;
+        font-size: 10px;
+        margin-top: 1rem;
+    }
+
+
+
+
+
+    .recommended-item_name,
+    .recommended-action-item_name,
+    .recommended-animation-item_name,
+    .recommended-drama-item_name,
+    .recommended-scary-item_name {
+        font-size: 12px;
+    }
+
+    .hero_section_movie_time svg,
+    .hero_section_movie_metha svg {
+        width: 18px;
+    }
+
+    .recommended-action-item_info img,
+    .recommended-animation-item_info img,
+    .recommended-item_info img,
+    .recommended-drama-item_info img,
+    .recommended-scary-item_info img {
+        width: 12px;
+    }
+
+    .recommended-scary-item_info_metha p,
+    .recommended-drama-item_info_metha p,
+    .recommended-action-item_info_metha p,
+    .recommended-item_info_metha p,
+    .recommended-animation-item_info_metha p,
+    .recommended-item_info_time span,
+    .recommended-animation-item_info_time span,
+    .recommended-action-item_info_time span,
+    .recommended-drama-item_info_time span,
+    .recommended-scary-item_info_time span {
+        font-size: 8px;
+    }
+
+
+
+
+    .movies_slider-wraaper {
+        height: 19rem;
+    }
+
+    .movies_slider-left {
+        width: 20rem;
+        margin-left: 1rem;
+        padding: 1rem 0;
+    }
+
+    .movies_slider-left_title {
+        font-weight: 100;
+        font-size: 1.8rem;
+    }
+
+    .movies_slider_synopsis {
+        font-size: 14px;
+        font-weight: 100;
+    }
+
+    .movies_slider_description {
+        font-size: 1rem;
+    }
+
+    .movies_slider__show_movie {
+        display: none;
+    }
+
+    .FA_name_movie {
+        display: none;
+    }
+
+    .movies_slider_time span,
+    .movies_slider_metha p {
+        font-size: 14px;
+    }
+
+    .movies_slider_metha p span {
+        font-size: 15px;
+    }
+
+    .movies_slider_time svg,
+    .movies_slider_metha svg {
+        width: 15px;
+        height: 15px;
+    }
+
+    .subscribe_newsletter {
+        display: none;
+    }
+
+    .footer_description {
+        font-size: 12px;
+        line-height: 19px;
+        margin-top: 3rem;
+    }
+
+    .footer_left {
+        margin-top: 1rem;
+        z-index: 100;
+        margin-bottom: 10rem;
+        background-color: rgba(124, 124, 124, 0.144);
+        border-radius: 1rem;
+        padding: 0.5rem;
+    }
+
+    .shape1,
+    .shape2 {
+        display: none;
+    }
+
+    .footer_left h4 {
+        font-size: 1.6rem;
+    }
+
+    .footer_li {
+        padding-bottom: 4px;
+    }
+
+    .footer_li a {
+        font-size: 13px;
+        line-height: 2rem;
+    }
+}
+
+
+
+/* =========================================================================================== */
+
+@media screen and (max-width:400px) {}
