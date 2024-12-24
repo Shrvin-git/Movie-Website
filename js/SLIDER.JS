@@ -33,7 +33,9 @@ const swiper = new Swiper('.swiper', {
   freeMode: true,
 
   breakpoints: {
-
+    300: {
+      slidesPerView: 3,
+    },
     400: {
       slidesPerView: 3,
     },
