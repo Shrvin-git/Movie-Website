@@ -907,7 +907,7 @@ Section: Comment
     }
 
     .bg_movie_mobile {
-        background-image: url(/img/backgroundPageMovieMobile.png);
+        background-image: url(../img/backgroundPageMovieMobile.png);
         display: block;
 
     }
